@@ -1,0 +1,8 @@
+<form (ngSubmit)="submitForm(form)" #form="ngForm">
+  <input type="text" [(ngModel)]="url" name="url" required />
+  <button type="submit">Submit</button>
+</form>
+
+<div *ngIf="html">
+  <pre>{{ html }}</pre>
+</div>
